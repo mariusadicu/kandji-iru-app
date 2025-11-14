@@ -1,0 +1,27 @@
+{
+  "name": "kandji-iru-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test",
+    "test:specific": "npx playwright test --grep file-name.spec.ts",
+    "test:tag": "npx playwright test --grep @tagName",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "allure:generate:report": "allure generate allure-results --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.1",
+    "allure-js-commons": "^3.4.2",
+    "allure-playwright": "^3.4.2",
+    "dotenv": "^17.2.3",
+    "otpauth": "^9.4.1"
+  }
+}
